@@ -10,7 +10,7 @@ const ReviewsPage = () => {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const res = await fetch("https://geomax-backend.onrender.com");
+        const res = await fetch("https://geomax-backend.onrender.com/api/reviews");
         const data = await res.json();
         setReviews(data);
       } catch (error) {
@@ -31,7 +31,7 @@ const ReviewsPage = () => {
     }
 
     try {
-      const res = await fetch("https://geomax-backend.onrender.com", {
+      const res = await fetch("https://geomax-backend.onrender.com/api/reviews", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
