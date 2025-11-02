@@ -27,7 +27,7 @@ const Contact = () => {
   }
 
   try {
-    const res = await fetch("http://localhost:5000/api/contact", {
+    const res = await fetch("https://geomax-backend.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -55,11 +55,7 @@ const Contact = () => {
   }
 };
 
-
-     
-     
-
-  return (
+return (
     <section id="contact" className="py-20 gradient-dark relative overflow-hidden">
       {/* Gradient accent */}
       <div className="absolute top-20 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
