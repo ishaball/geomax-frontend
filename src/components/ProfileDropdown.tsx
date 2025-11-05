@@ -38,7 +38,7 @@ const ProfileDropdown = () => {
 
 
   {/* ✅ Company Name */}
-  <span className="text-xl font-bold text-blue-600 ">
+  <span className="text-xl font-bold text-blue-600 hidden sm:block-transition-colors ">
     Geomax Broadband Services
   </span>
 

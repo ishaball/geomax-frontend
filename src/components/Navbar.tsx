@@ -57,7 +57,7 @@ const Navbar = () => {
             className="lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X className="h-6 w-6 text-blue-600"/> : <Menu />}
+            {isMenuOpen ? <X className="h-6 w-6 text-blue-600"/> : (<Menu className="h-6 w-6 text-blue-600" />)}
           </Button>
         </div>
 
