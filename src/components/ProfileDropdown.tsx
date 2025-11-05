@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Wifi, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { UserButton, useUser } from "@clerk/clerk-react";
+import logoImage from "@/assets/logoImage.jpg";
 
 const ProfileDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,17 +23,25 @@ const ProfileDropdown = () => {
   return (
     <div className="relative" ref={dropdownRef}>
       {/* Header Logo + Toggle */}
-      <div
-        className="flex items-center space-x-3 cursor-pointer group"
+     {/* Header Logo + Toggle */}
+<div
+  className="flex items-center space-x-3 cursor-pointer group"
+  onClick={() => setIsOpen(!isOpen)}
+>
+ 
+  <img
+        src={logoImage} // <-- replace with your actual logo path
+        alt="GeoMax Logo"
+        className="h-12 w-auto rounded-md shadow-sm cursor-pointer transition-transform hover:scale-105"
         onClick={() => setIsOpen(!isOpen)}
-      >
-        <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg transition-transform group-hover:scale-105">
-          <Wifi className="w-6 h-6 text-white" />
-        </div>
-        <span className="text-xl font-bold text-foreground hidden sm:block">
-          GEOMAX
-        </span>
-      </div>
+      />
+
+
+  {/* ✅ Company Name */}
+  <span className="text-xl font-bold text-foreground hidden sm:block">
+    Geomax Broadband Services
+  </span>
+</div>
 
       {/* Dropdown Menu */}
       {isOpen && (

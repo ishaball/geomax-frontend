@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ProfileDropdown from "./ProfileDropdown"; // ✅ Import your dropdown
 import { Link } from "react-router-dom";
-
+import logoImage from "@/assets/IMG-20251101-WA0015 (1).jpg";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
