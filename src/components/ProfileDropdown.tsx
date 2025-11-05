@@ -38,22 +38,11 @@ const ProfileDropdown = () => {
 
 
   {/* ✅ Company Name */}
-  <span className="text-xl font-bold text-blue-600 hidden sm:block transition-colors">
+  <span className="text-xl font-bold text-blue-600 ">
     Geomax Broadband Services
   </span>
 
 
-  {/* ✅ Mobile Menu Icon in Blue */}
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={2}
-    stroke="#007bff"  // <-- blue color for hamburger icon
-    className="w-7 h-7 sm:hidden ml-auto"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-  </svg>
 </div>
 
       {/* Dropdown Menu */}
