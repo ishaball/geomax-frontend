@@ -56,9 +56,7 @@ const Contact = () => {
 };
 
 return (
-    <section id="contact" className="py-20 gradient-dark relative overflow-hidden">
-      {/* Gradient accent */}
-      <div className="absolute top-20 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+    <section id="contact" className="py-20 bg-background relative overflow-hidden">
 
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl lg:text-5xl font-bold text-center text-foreground mb-12 glow-text">
@@ -90,7 +88,7 @@ return (
                   </div>
                   <div>
                     <h6 className="font-semibold text-foreground mb-1">Phone</h6>
-                    <p className="text-muted-foreground">08488845694</p>
+                    <p className="text-muted-foreground">9890965865</p>
                   </div>
                 </div>
 
@@ -100,7 +98,7 @@ return (
                   </div>
                   <div>
                     <h6 className="font-semibold text-foreground mb-1">Email</h6>
-                    <p className="text-muted-foreground">info@geomaxbroadband.com</p>
+                    <p className="text-muted-foreground">geomaxbroadbandservices@gmail.com</p>
                   </div>
                 </div>
               </div>

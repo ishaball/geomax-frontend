@@ -4,17 +4,12 @@ import heroImage from "@/assets/hero-connectivity.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-32 pb-20 gradient-hero relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-      </div>
+    <section id="home" className="pt-32 pb-20 bg-background relative overflow-hidden">
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="text-white space-y-6">
+          <div className="text-orange-500 space-y-6">
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
               Welcome to <br />
               <span className="glow-text">Geomax Broadband</span>

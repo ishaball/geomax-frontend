@@ -16,10 +16,13 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "#home", label: "Home" },
+     {href : "#why-us", label: "Why Us"},
+         { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
-    { href: "#about", label: "About" },
+   
+
     { href: "#organisation", label: "Organisation" },
-    { href: "#testimonials", label: "Testimonials" },
+    { href: "#plans", label: "Plans" },
     { href: "#contact", label: "Contact" },
     { href: "/reviews", label: "Reviews" }, 
   ];
@@ -27,7 +30,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-         isScrolled ? "backdrop-blur-md bg-white/80 shadow-md" : "bg-white/95"
+         isScrolled ? "bg-blue-950 shadow-md" : "bg-blue-950"
 
       }`}
     >
@@ -42,7 +45,7 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                   className="text-gray-800 hover:text-blue-600 transition-colors font-medium"
+                   className="text-white-800 hover:text-white transition-colors font-medium"
 
               >
                 {link.label}

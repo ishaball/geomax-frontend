@@ -3,14 +3,14 @@ import officeImg from "@/assets/geomax-office.jpg";
 
 const Organisation = () => {
   return (
-    <section id="organisation" className="py-20 gradient-dark">
+    <section id="organisation" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl lg:text-5xl font-bold text-center text-foreground mb-12 glow-text">
           Organisation Details
         </h2>
 
         <div className="max-w-5xl mx-auto">
-          <Card className="shadow-glow border border-primary/20 bg-card/80 backdrop-blur-sm">
+          <Card className="shadow-glow border border-primary/20 bg-card">
             <CardContent className="p-8">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 {/* Text Content */}

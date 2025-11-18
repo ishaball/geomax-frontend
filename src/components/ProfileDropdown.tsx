@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Wifi, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { UserButton, useUser } from "@clerk/clerk-react";
-import logoImage from "@/assets/logoImage.jpg";
+import geomaxlogo from "@/assets/geomaxlogo.jpg";
 
 const ProfileDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ const ProfileDropdown = () => {
 >
  
   <img
-        src={logoImage} // <-- replace with your actual logo path
+        src={geomaxlogo} // <-- replace with your actual logo path
         alt="GeoMax Logo"
         className="h-12 w-auto rounded-md shadow-sm cursor-pointer transition-transform hover:scale-105"
         onClick={() => setIsOpen(!isOpen)}

@@ -9,6 +9,48 @@ import readylinkImg from "@/assets/readylink-service.jpg";
 import tataImg from "@/assets/tata-service.jpg";
 import hathwayImg from "@/assets/hathway-service.jpg";
 import allianceImg from "@/assets/alliance-service.jpg";
+<section className="features">
+        <div className="container">
+          <h2 className="section-title">Why Choose GeoMax?</h2>
+          <div className="features-grid">
+            <div className="feature-card">
+              <div className="feature-icon">⚡</div>
+              <h3>Ultra-Fast Speed</h3>
+              <p>Experience blazing-fast internet speeds up to 1 Gbps for seamless streaming and gaming</p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon">🛡</div>
+              <h3>Secure Connection</h3>
+              <p>Advanced security features to keep your data safe and protected at all times</p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon">💎</div>
+              <h3>Premium Quality</h3>
+              <p>Fiber-optic technology delivering consistent, reliable performance 24/7</p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon">🎯</div>
+              <h3>No Data Caps</h3>
+              <p>Unlimited data usage with no hidden fees or throttling - ever</p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon">🔧</div>
+              <h3>24/7 Support</h3>
+              <p>Round-the-clock technical support from our expert team</p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon">💰</div>
+              <h3>Best Value</h3>
+              <p>Competitive pricing with flexible plans to suit every budget</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
 const services = [
   {
@@ -55,7 +97,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 gradient-dark relative">
+    <section id="services" className="py-20 bg-background relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4 glow-text">
@@ -70,7 +112,7 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group hover:-translate-y-2 transition-smooth shadow-glow hover:shadow-elegant border border-primary/20 overflow-hidden bg-card/80 backdrop-blur-sm"
+              className="group hover:-translate-y-2 transition-smooth shadow-glow hover:shadow-elegant border border-primary/20 overflow-hidden bg-card"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
