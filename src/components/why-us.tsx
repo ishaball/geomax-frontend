@@ -9,7 +9,7 @@ const whyus = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-white">
             Why Choose <span className="text-orange-500">Geomax Broadband?</span>
           </h2>
-          <p className="text-white/70 mt-4 text-lg">
+          <p className="text-white mt-4 text-lg">
             Akola’s most reliable, fastest and customer-focused internet service.
           </p>
         </div>

@@ -5,22 +5,22 @@ const Plans = () => {
   const plans = [
     {
       speed: "50 Mbps",
-      price: "₹499/month",
+      price: "₹700/month",
       features: ["Unlimited Data", "Free Installation", "24/7 Support"],
     },
     {
       speed: "100 Mbps",
-      price: "₹699/month",
+      price: "₹1000/month",
       features: ["Unlimited Data", "Free Router", "Priority Support"],
     },
     {
       speed: "200 Mbps",
-      price: "₹999/month",
+      price: "₹1500/month",
       features: ["Unlimited Data", "Dual-Band Router", "Prime Support"],
     },
     {
       speed: "300 Mbps",
-      price: "₹1299/month",
+      price: "₹2000/month",
       features: ["Unlimited Data", "Free WiFi 6 Router", "Express Support"],
     },
   ];

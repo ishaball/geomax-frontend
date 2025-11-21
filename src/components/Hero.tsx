@@ -27,7 +27,7 @@ const Hero = () => {
               >
                 <a href="#contact">
                   Get a Quote
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="border-white/30 ml-2 w-5 h-5   hover:bg-white/10" />
                 </a>
               </Button>
               <Button
