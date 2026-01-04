@@ -1,4 +1,20 @@
 import { Linkedin, Facebook, Instagram } from "lucide-react";
+const socialLinks = [
+ 
+  {
+    icon: Instagram,
+    url: "https://www.instagram.com/geomax_broadband_services?igsh=aWU2eGd2djJqbmg3",
+  },
+    {
+    icon: Linkedin,
+    url: "https://www.linkedin.com/company/your-linkedin-page",
+  },
+  {
+    icon: Facebook,
+    url: "https://www.facebook.com/your-facebook-page",
+  },
+
+];
 
 const Footer = () => {
   return (
@@ -19,12 +35,14 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Social Icons */}
+             {/* Social Icons */}
           <div className="flex items-center justify-start md:justify-end space-x-5">
-            {[Linkedin, Facebook, Instagram].map((Icon, index) => (
+            {socialLinks.map(({ icon: Icon, url }, index) => (
               <a
                 key={index}
-                href="#"
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-white/10 border border-white/20 
                 hover:bg-orange-500/20 hover:border-orange-500/40
                 flex items-center justify-center transition-all"
